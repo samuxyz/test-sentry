@@ -1,0 +1,1 @@
+webpackJsonp([4],{40:function(e,n,t){"use strict";Object.defineProperty(n,"__esModule",{value:!0});var c=t(1),l=t.n(c);n.default=function(e){var n=e.onClick;return l.a.createElement("div",null,l.a.createElement("h2",null,"Click to show the second component!"),l.a.createElement("button",{onClick:n},"Click"))}}});
