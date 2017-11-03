@@ -6,7 +6,7 @@ import Raven from 'raven-js';
 Raven.config(
   'https://85e65cd34ee74a65b10a6617ea543b25@sentry.io/238336',
   {
-    release: '0e4fdef81448dcfa0e16ecc4433ff3997aa53572'
+    release: '1.0.1'
   },
 ).install();
 
