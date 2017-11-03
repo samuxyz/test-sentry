@@ -7,7 +7,7 @@ export default class Inbox extends Component {
     this.state = { show: false };
   }
 
-  handleClick = () => this.setStates({ show: true });
+  handleClick = () => this.setState({ show: true });
 
   render () {
     return (
