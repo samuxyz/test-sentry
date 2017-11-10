@@ -2,10 +2,10 @@ import React, { Component } from 'react';
 import Component2 from 'components/Component2';
 import Raven from 'raven-js';
 
-function handleRouteError(err) {
+/* function handleRouteError(err) {
   Raven.captureException(err);
   Raven.showReportDialog();
-};
+};*/
 
 export default class Inbox extends Component {
   constructor (props) {
@@ -14,11 +14,11 @@ export default class Inbox extends Component {
   }
 
   handleClick = () => {
-    try {
+    // try {
       this.setState({ show: true });
-    } catch (e) {
-      handleRouteError(e);
-    }
+    // } catch (e) {
+    //  handleRouteError(e);
+    // }
   }
 
   render () {

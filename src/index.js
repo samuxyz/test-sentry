@@ -1,13 +1,11 @@
 import React from 'react';
 import { render } from 'react-dom';
-import { Router, Route, Link, hashHistory, browserHistory } from 'react-router';
+import { Router, Route, Link, browserHistory } from 'react-router';
 import { App, About, Inbox } from 'components';
 import Raven from 'raven-js';
 Raven.config(
   'https://85e65cd34ee74a65b10a6617ea543b25@sentry.io/238336',
-  {
-    release: '1.0.2'
-  },
+  { release: '1.0.4' },
 ).install();
 
 const route = (
@@ -18,8 +16,10 @@ const route = (
     </Route>
   </Router>
 );
+
 Raven.setUserContext({
-    email: 'samurlrrr@zaza.com',
-    id: '123445'
+  email: 'sam@sentry.com',
+  id: '123456',
 });
+
 render(route, document.getElementById('app'));
