@@ -4,8 +4,8 @@ import { Router, Route, Link, browserHistory } from 'react-router';
 import { App, About, Inbox } from 'components';
 import Raven from 'raven-js';
 Raven.config(
-  'https://85e65cd34ee74a65b10a6617ea543b25@sentry.io/238336',
-  { release: '1.0.4' },
+  'https://7cbf0201a7f2478ca690ca4624a6950f@sentry.io/242977',
+  { release: '1.0.0' },
 ).install();
 
 const route = (

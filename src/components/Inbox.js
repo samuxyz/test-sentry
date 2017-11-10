@@ -15,7 +15,7 @@ export default class Inbox extends Component {
 
   handleClick = () => {
     // try {
-      this.setState({ show: true });
+    this.setState({ show: true });
     // } catch (e) {
     //  handleRouteError(e);
     // }
